@@ -19,5 +19,4 @@ A more typical approach when working with Clojure is to use the [Leiningen](http
 
 The program is text based as shown by:
 
-![console view](https://www.github.com/ropsal/clojure-hangman/images/console.png) 
-
+![console view](https://github.com/ROpsal/clojure-hangman/blob/master/images/console.png)
