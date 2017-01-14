@@ -1,0 +1,26 @@
+// Grabs the clojuresque plugin.
+plugins {
+	id "de.kotka.clojuresque.clojure" version "2.0.0"
+}
+
+// Specify Gradle version for this project.
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.3'
+}
+
+// Declare where to find the dependencies of your project.
+repositories {
+	mavenCentral()
+	clojarsRepo()
+}
+
+// Declare the dependencies for your production and test code.
+dependencies {
+	compile 'org.clojure:clojure:1.8.0'
+}
+
+// NOTE: You *must* enable Ahead-of-Time compilation in order to use a Clojure class as the main class.
+clojure.aotCompile = true
+
+// To execute from command line, use the following!
+// java -cp c:\Clojure\clojure-1.8.0.jar;build\libs\Hangman.jar hangman

@@ -1,0 +1,1 @@
+java -cp c:\Clojure\clojure-1.8.0.jar;build\libs\Hangman.jar hangman
